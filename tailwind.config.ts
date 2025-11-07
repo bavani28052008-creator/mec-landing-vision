@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -63,6 +66,14 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      backgroundImage: {
+        'gradient-green': 'linear-gradient(135deg, hsl(var(--gradient-green-from)), hsl(var(--gradient-green-to)))',
+        'gradient-coral': 'linear-gradient(135deg, hsl(var(--gradient-coral-from)), hsl(var(--gradient-coral-to)))',
+        'gradient-purple': 'linear-gradient(135deg, hsl(var(--gradient-purple-from)), hsl(var(--gradient-purple-to)))',
+        'gradient-blue': 'linear-gradient(135deg, hsl(var(--gradient-blue-from)), hsl(var(--gradient-blue-to)))',
+        'gradient-yellow': 'linear-gradient(135deg, hsl(var(--gradient-yellow-from)), hsl(var(--gradient-yellow-to)))',
+        'gradient-pink': 'linear-gradient(135deg, hsl(var(--gradient-pink-from)), hsl(var(--gradient-pink-to)))',
+      },
       keyframes: {
         "accordion-down": {
           from: {
@@ -80,10 +91,32 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          from: {
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "slide-up": {
+          from: {
+            opacity: "0",
+            transform: "translateY(30px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.6s ease-out forwards",
+        "slide-up": "slide-up 0.6s ease-out forwards",
       },
     },
   },
