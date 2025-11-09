@@ -8,13 +8,14 @@ const Footer = () => {
         {/* CTA Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Ready to Start Your Tech Journey?
+            Ready to Start good mooring
+          ?
           </h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
             Join India's premier engineering college and shape your future in technology
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-6 text-lg font-semibold">
+            <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-6 text-lg font-">shrink
               <Phone className="mr-2 w-5 h-5" />
               Speak to an Expert
             </Button>

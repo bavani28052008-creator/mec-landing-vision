@@ -24,7 +24,8 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Your Tech Journey Begins{" "}
+            hello
+          {" "}
             <span className="text-primary">@ Madras Engineering College.</span>
           </h1>
 
